@@ -30,7 +30,7 @@
   <groupId>org.xwiki.contrib.datatables</groupId>
   <artifactId>datatables-macro</artifactId>
   <name>Datatables Macro</name>
-  <version>1.1-SNAPSHOT</version>
+  <version>1.0.1</version>
   <packaging>xar</packaging>
   <description>XWiki macro to easily integrate the Datatables plugin for jQuery.</description>
   <properties>
@@ -41,7 +41,7 @@
     <connection>scm:git:git://github.com/xwiki-contrib/macro-datatables.git</connection>
     <developerConnection>scm:git:git@github.com:xwiki-contrib/macro-datatables.git</developerConnection>
     <url>https://github.com/xwiki-contrib/macro-datatables.git</url>
-    <tag>HEAD</tag>
+    <tag>datatables-macro-1.0.1</tag>
   </scm>
   <developers>
     <developer>

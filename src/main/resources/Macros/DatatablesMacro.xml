@@ -478,7 +478,7 @@ $xwiki.jsx.use("Macros.DatatablesMacro", {"defer":false})
 {{html wiki="false" clean="false"}}
 &lt;script type="text/javascript"&gt;
 //&lt;![CDATA[
-require(['jquery', 'datatables', 'css!datatables-css'#foreach($ext in $DText), 'datatables-${ext}'#if(!$bs || $ext != "fixedcolumns"), 'css!datatables-${ext}-css'#end#end#if($bs), 'datatables-bootstrap', 'css!datatables-bootstrap-css'#end, 'domReady!'], function ($) {
+require(['jquery', 'datatables'#if(!$bs), 'css!datatables-css'#{else}, 'datatables-bootstrap', 'css!datatables-bootstrap-css'#end#foreach($ext in $DText), 'datatables-${ext}'#if(!$bs || $ext != "fixedcolumns"), 'css!datatables-${ext}-css'#end#end, 'domReady!'], function ($) {
    var table = $('#${xcontext.macro.params.tableid}').DataTable( {
 $xcontext.macro.content
    });
